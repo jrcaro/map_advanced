@@ -1,6 +1,7 @@
 import * as d3 from "d3";
 import * as topojson from "topojson-client";
-const spainjson = require("./spain.json");
+const spainjson = require("./data/spain.json");
+const municipalitiesjson = require("./data/municipalities.json");
 const d3Composite = require("d3-composite-projections");
 import { infectedFebruary } from "./stats";
 
@@ -20,11 +21,11 @@ const geoPath = d3.geoPath().projection(aProjection);
 const geojson = topojson.feature(spainjson, spainjson.objects.ESP_adm1);
 
 // Data and color scale
-var data = d3.map();
+/*var data = d3.map();
 var colorScheme = d3.schemeBlues[6];
 var colorScale = d3.scaleThreshold()
     .domain([1, 6, 11, 26, 101, 1001])
-    .range(<any>colorScheme);
+    .range(<any>colorScheme);*/
 
 // Let's paint first the map
 svg
@@ -32,4 +33,5 @@ svg
   .data(geojson["features"])
   .enter()
   .append("path")
-  .attr("d", geoPath as any);
+  .attr("d", geoPath as any)
+  .attr("class", "country");
