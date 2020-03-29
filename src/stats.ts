@@ -5,7 +5,7 @@ export interface ResultEntry {
 
 export const infectedFebruary: ResultEntry[] = [
     {
-      name: "Madrid",
+      name: "Comunidad de Madrid",
       value: 174
     },
     {
@@ -21,11 +21,11 @@ export const infectedFebruary: ResultEntry[] = [
       value: 24
     },
     {
-      name: "Valencia",
+      name: "Comunidad Valenciana",
       value: 30
     },
     {
-      name: "Murcia",
+      name: "Región de Murcia",
       value: 0
     },
     {
@@ -33,7 +33,7 @@ export const infectedFebruary: ResultEntry[] = [
       value: 6
     },
     {
-      name: "Castilla La Mancha",
+      name: "Castilla-La Mancha",
       value: 16
     },
     {
@@ -45,7 +45,7 @@ export const infectedFebruary: ResultEntry[] = [
       value: 10
     },
     {
-      name: "Asturias",
+      name: "Principado de Asturias",
       value: 5
     },
     {
@@ -69,14 +69,14 @@ export const infectedFebruary: ResultEntry[] = [
       value: 6
     },
     {
-      name: "Navarra",
+      name: "Comunidad Foral de Navarra",
       value: 13
     }
   ];
 
   export const infectedMarch: ResultEntry[] = [
     {
-      name: "Madrid",
+      name: "Comunidad de Madrid",
       value: 9702
     },
     {
@@ -92,11 +92,11 @@ export const infectedFebruary: ResultEntry[] = [
       value: 4704
     },
     {
-      name: "Valencia",
+      name: "Comunidad Valenciana",
       value: 1604
     },
     {
-      name: "Murcia",
+      name: "Región de Murcia",
       value: 296
     },
     {
@@ -104,7 +104,7 @@ export const infectedFebruary: ResultEntry[] = [
       value: 384
     },
     {
-      name: "Castilla La Mancha",
+      name: "Castilla-La Mancha",
       value: 1819
     },
     {
@@ -116,7 +116,7 @@ export const infectedFebruary: ResultEntry[] = [
       value: 282
     },
     {
-      name: "Asturias",
+      name: "Principado de Asturias",
       value: 545
     },
     {
@@ -140,7 +140,7 @@ export const infectedFebruary: ResultEntry[] = [
       value: 331
     },
     {
-      name: "Navarra",
+      name: "Comunidad Foral de Navarra",
       value: 794
     }
   ];
