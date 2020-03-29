@@ -26,7 +26,6 @@ Also we need a function to change the color background of the commuties based in
 +  infected: ResultEntry[]
 +) => {
 +  const item = infected.find(item => item.name === CCAAName);
-+  console.log(CCAAName)
 +  return item ? color(item.value) : color(0);
 +};
 ```
