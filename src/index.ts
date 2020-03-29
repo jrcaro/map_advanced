@@ -24,7 +24,6 @@ const assignCCAABackgroundColor = (
   infected: ResultEntry[]
 ) => {
   const item = infected.find(item => item.name === CCAAName);
-  console.log(CCAAName)
   return item ? color(item.value) : color(0);
 };
 
@@ -32,7 +31,7 @@ const updateCCAABackground = (infected: ResultEntry[]) => {
   const paths = svg.selectAll("path")
   paths
   .style("fill", function(d: any) {
-    return assignCCAABackgroundColor(d.properties.NAME_1, infected); //buscar en el json
+    return assignCCAABackgroundColor(d.properties.NAME_1, infected);
   })
   .attr("d", geoPath as any);
 };
@@ -54,7 +53,6 @@ const affectedRadiusScale = d3
 };
 
 const updateCircles = (data: ResultEntry[]) => {
-  console.log("cosa")
   const circles = svg.selectAll("circle");
   circles
     .data(latLongCommunities)
@@ -86,7 +84,7 @@ svg
   .enter()
   .append("path")
   .style("fill", function(d: any) {
-    return assignCCAABackgroundColor(d.properties.NAME_1, infectedFebruary); //buscar en el json
+    return assignCCAABackgroundColor(d.properties.NAME_1, infectedFebruary);
   })
   .attr("d", geoPath as any);
 
